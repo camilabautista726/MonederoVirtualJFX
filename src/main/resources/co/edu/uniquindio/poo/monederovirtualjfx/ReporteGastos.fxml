@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="700.0" prefWidth="520.0" spacing="12.0" style="-fx-background-color: #F4F6F9;"
+      xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="co.edu.uniquindio.poo.monederovirtualjfx.viewController.ReporteGastosViewController">
+    <padding>
+        <Insets bottom="25.0" left="30.0" right="30.0" top="25.0" />
+    </padding>
+    <children>
+        <Label style="-fx-text-fill: #1E293B;" text="Reporte de gastos">
+            <font><Font name="System Bold" size="22.0" /></font>
+        </Label>
+        <Label style="-fx-text-fill: #64748B; -fx-font-size: 12px;" text="Resumen de todas tus transacciones" wrapText="true" />
+
+        <Button fx:id="btnGenerar" maxWidth="1.7976931348623157E308" onAction="#generar" prefHeight="42.0" style="-fx-background-color: #2563EB; -fx-text-fill: white; -fx-background-radius: 8; -fx-font-weight: bold; -fx-font-size: 14px; -fx-cursor: hand;" text="Generar reporte" />
+
+        <TextArea fx:id="txtResultado" editable="false" prefHeight="420.0" style="-fx-control-inner-background: white; -fx-font-family: 'Consolas'; -fx-font-size: 12px;" VBox.vgrow="ALWAYS" wrapText="true" />
+
+        <Label fx:id="lblMensaje" style="-fx-text-fill: #EF4444; -fx-font-size: 12px;" text="" wrapText="true" />
+
+        <Button fx:id="btnVolver" maxWidth="1.7976931348623157E308" onAction="#volver" prefHeight="40.0" style="-fx-background-color: #E2E8F0; -fx-text-fill: #1E293B; -fx-background-radius: 8; -fx-font-weight: bold; -fx-font-size: 13px; -fx-cursor: hand;" text="Volver al menú" />
+    </children>
+</VBox>
